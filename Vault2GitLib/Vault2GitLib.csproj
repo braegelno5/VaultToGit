@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EE493CD2-D308-4B2F-95C6-68A1F89D76CD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vault2Git.Lib</RootNamespace>
+    <AssemblyName>Vault2GitLib</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DragnetLib, Version=6.1.0.531, Culture=neutral, PublicKeyToken=14a8075ce88af4e0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\VaultClientAPI_6_1_0_531\DragnetLib.dll</HintPath>
+    </Reference>
+    <Reference Include="SGDiff, Version=4.0.6.15954, Culture=neutral, PublicKeyToken=f3bc199665d82028, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VaultClientIntegrationLib, Version=6.1.0.531, Culture=neutral, PublicKeyToken=500623c275bd78a9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\VaultClientAPI_6_1_0_531\VaultClientIntegrationLib.dll</HintPath>
+    </Reference>
+    <Reference Include="VaultClientNetLib, Version=6.1.0.531, Culture=neutral, PublicKeyToken=e372e94840f8a4d3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\VaultClientAPI_6_1_0_531\VaultClientNetLib.dll</HintPath>
+    </Reference>
+    <Reference Include="VaultClientOperationsLib, Version=6.1.0.531, Culture=neutral, PublicKeyToken=e372e94840f8a4d3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\VaultClientAPI_6_1_0_531\VaultClientOperationsLib.dll</HintPath>
+    </Reference>
+    <Reference Include="VaultLib, Version=6.1.0.531, Culture=neutral, PublicKeyToken=a74d7badb9387c36, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\VaultClientAPI_6_1_0_531\VaultLib.dll</HintPath>
+    </Reference>
+    <Reference Include="VCDiff, Version=6.1.0.531, Culture=neutral, PublicKeyToken=4f75799f06837886, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\VaultClientAPI_6_1_0_531\VCDiff.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Processor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="libs\VaultClientAPI_6_1_0_531\DragnetLib.dll" />
+    <Content Include="libs\VaultClientAPI_6_1_0_531\ICSharpCode.SharpZipLib.NET20.dll" />
+    <Content Include="libs\VaultClientAPI_6_1_0_531\README.TXT" />
+    <Content Include="libs\VaultClientAPI_6_1_0_531\vault.exe" />
+    <Content Include="libs\VaultClientAPI_6_1_0_531\VaultClientIntegrationLib.dll" />
+    <Content Include="libs\VaultClientAPI_6_1_0_531\VaultClientNetLib.dll" />
+    <Content Include="libs\VaultClientAPI_6_1_0_531\VaultClientOperationsLib.dll" />
+    <Content Include="libs\VaultClientAPI_6_1_0_531\VaultLib.dll" />
+    <Content Include="libs\VaultClientAPI_6_1_0_531\VaultPluginLib.dll" />
+    <Content Include="libs\VaultClientAPI_6_1_0_531\VaultServiceBase.dll" />
+    <Content Include="libs\VaultClientAPI_6_1_0_531\VCDiff.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libs\VaultClientAPI_6_1_0_531\VaultClientIntegrationLib.chm" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
